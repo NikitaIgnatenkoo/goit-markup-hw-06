@@ -25,11 +25,6 @@ p {
 margin: 0;
 }
 
-.container {
-max-width: 320px;
-margin: 0 auto;
-padding: 0 16px;
-}
 .header {
 border-bottom: 1px solid #e7e9fc;
 box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -59,17 +54,14 @@ margin-right: 76px;
 .logo-accent {
 color: #2e2f42;
 }
-
 .nav-list {
 display: none;
 }
-
 .address {
 font-style: normal;
 margin-left: auto;
 display: none;
 }
-
 .open-menu-btn {
 padding: 0;
 line-height: 0;
@@ -78,29 +70,36 @@ cursor: pointer;
 border: none;
 }
 
+/* section-one */
+.container {
+max-width: 320px;
+margin: 0 auto;
+padding: 0 16px;
+}
 .section-one {
-margin-left: auto;
-margin-right: auto;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/heroimg.jpg);
-padding: 188px 0 188px;
-max-width: 1440px;
+/* padding: 188px 0 188px; */
+padding: 72px 0;
+margin: 0 auto;
+/* max-width: 1440px; */
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+max-width: 320px;
 background-color: #2e2f42;
 }
-
 .section-one-info {
 font-weight: 700;
+/* font-size: 56px; */
 font-size: 36px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #ffffff;
+/* max-width: 496px; */
 max-width: 216px;
-margin: auto;
+margin: 0 auto;
 }
-
 .section-one-button {
 font-family: Roboto, sans-serif;
 font-weight: 500;
@@ -122,6 +121,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .section-one-button:hover,
 .section-one-button:focus {
 background-color: #404BBF;
+}
+button,
+select {
+text-transform: none;
 }
 
 /* section-two */
@@ -173,86 +176,76 @@ color: #434455;
 
 /* section-three */
 .section-three{
-padding: 120px 0;
 background-color: #f4f4fd;
+padding-top: 96px;
+padding-bottom: 96px;
 }
-
 .section-three-main {
-font-family: "Roboto", sans-serif;
+text-transform: capitalize;
 font-weight: 700;
 font-size: 36px;
-line-height: 111%;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
-text-transform: capitalize;
 margin-bottom: 72px;
 }
-
 .card-list {
 display: flex;
-gap: 24px;
+flex-direction: column;
+align-items: center;
+/* gap: 24px; */
+gap: 72px;
 }
-
 .team-card {
-width: calc((100% - 72px) / 4);
+/* width: calc((100% - 72px) / 4); */
 border-radius: 0px 0px 4px 4px;
 background-color: #FFFFFF;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.employees {
-padding-top: 32px;
-padding-bottom: 32px;
 text-align: center;
+width: 264px;
 }
-
 .img {
-background-color: #ffffff;
-display: block;
+margin: 0 auto;
 }
-
+.employees {
+padding: 32px 0;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin-left: 16px;
+margin-right: 15px;
+}
 .section-three-name {
-font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 20px;
-line-height: 120%;
+line-height: 1.2;
 letter-spacing: 0.02em;
-text-align: center;
 color: #2e2f42;
-text-transform: capitalize;
 margin-bottom: 8px;
-}
-
-.job-title {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
 text-align: center;
+}
+.job-title {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 color: #434455;
 }
-
 .social-list {
 display: flex;
-justify-content: center;
 gap: 24px;
-margin: 0 auto;
-padding-top: 8px;
+margin-top: 8px;
+justify-content: center;
 }
-
 .social-icons {
-display: flex;
-justify-content: center;
-gap: 24px;
 width: 40px;
 height: 40px;
 }
-
 .social-style {
+border-radius: 50%;
 width: 100%;
 height: 100%;
 background-color: #4d5ae5;
@@ -262,30 +255,29 @@ align-items: center;
 justify-content: center;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
 .social-style:hover,
 .social-style:focus{
 background-color: #404bbf;
 }
-
 .icon-image {
 fill: #f4f4fd;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+/* section-four */
 .section-four{
-padding: 120px 0 120px 0;
+padding-top: 96px;
+padding-bottom: 96px;
 }
 
 .portfolio {
-font-family: "Roboto", sans-serif;
+text-transform: capitalize;
 font-weight: 700;
 font-size: 36px;
-line-height: 111%;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
-text-transform: capitalize;
 margin-bottom: 72px;
 }
 
@@ -379,11 +371,6 @@ padding: 100px 0;
 }
 
 .footer-container {
-display: flex;
-align-items: baseline;
-}
-
-.container {
 display: flex;
 align-items: baseline;
 }
@@ -828,4 +815,12 @@ gap: 40px;
 font-size: 16px;
 line-height: 1.5;
 }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-rezolution: 2dppx),
+(min-rezolution: 192dpi) {
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/heroimg.jpg);
+    }
 }
