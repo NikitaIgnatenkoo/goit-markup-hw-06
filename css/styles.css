@@ -269,7 +269,6 @@ fill: #f4f4fd;
 padding-top: 96px;
 padding-bottom: 96px;
 }
-
 .portfolio {
 text-transform: capitalize;
 font-weight: 700;
@@ -280,74 +279,55 @@ text-align: center;
 color: #2e2f42;
 margin-bottom: 72px;
 }
-
-.portfolio-content {
-font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-}
-
 .portfolio-list{ 
+background-color: #ffffff;
 display: flex;
+/* gap: 48px 24px; */
 flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 48px;
+gap: 48px;
 }
-
 .project-info {
-width: calc((100% - 48px) / 3);
-position: relative;
+/* width: calc((100% - 48px) / 3); */
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .project-info:hover .portfolio-cover-text {
 transform: translateY(0%);
 }
-
 .project-info:hover {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-.portfolio-container {
-padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top: none;
-}
-
 .portfolio-cover-wrap {
 position: relative;
 overflow: hidden;
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 288px;
+height: 280px;
 }
-
-
 .portfolio-cover-text {
 position: absolute;
 top: 0;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+background: #4d5ae5;
 padding: 40px 32px;
-background-color: #4d5ae5;
 height: 100%;
 width: 100%;
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-.project-card {
-display: block;
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-container {
+border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+/* width: 360px; */
+width: 288px;
+padding: 32px 16px;
 }
-
-.card-content {
-font-family: "Roboto", sans-serif;
+.portfolio-content {
 font-weight: 500;
 font-size: 20px;
 line-height: 120%;
@@ -355,7 +335,6 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 margin-bottom: 8px;
 }
-
 .card-app {
 font-family: "Roboto", sans-serif;
 font-weight: 400;
@@ -365,20 +344,19 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
+
+/* footer */
 .footer {
 background-color: #2e2f42;
 padding: 100px 0;
 }
-
 .footer-container {
 display: flex;
 align-items: baseline;
 }
-
 .divlogo {
 margin-right: 120px;
 }
-
 .footer-logo{
 font-family: "Raleway", sans-serif;
 font-weight: 700;
