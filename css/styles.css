@@ -147,12 +147,11 @@ overflow: hidden;
 }
 .advantages-list {
 display: flex;
+flex-wrap: wrap;
 gap: 72px;
-flex-direction: column;
 }
-.feature {
+/* .feature {
 /* width: calc((100% - 72px) / 4); */
-}
 .icon-container {
 display: none;
 }
@@ -498,8 +497,8 @@ pointer-events: auto;
 }
 .modal {
 position: absolute;
-width: 288px;
-min-height: 623px;
+min-width: 320px;
+min-height: 640px;
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 background: #fcfcfc;
 border-radius: 4px;
@@ -512,21 +511,21 @@ padding: 72px 16px 16px 16px;
 }
 .modal-close-btn {
 position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    right: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    background: #e7e9fc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 24px;
+height: 24px;
+top: 24px;
+right: 24px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+display: block;
+margin-left: auto;
+background: #e7e9fc;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -592,7 +591,6 @@ top: 50%;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-comment {
 font-size: 12px;
 width: 100%;
@@ -670,7 +668,6 @@ text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
 }
-
 .modal-btn {
 font-family: Roboto, sans-serif;
 font-weight: 500;
@@ -701,8 +698,8 @@ max-width: 1158px;
 padding: 0 15px;
 }
 }
-@media screen and (min-width: 768px) {
 
+@media screen and (min-width: 768px) {
 .open-menu-btn {
 display: none;
 }
@@ -780,9 +777,9 @@ line-height: 1.5;
 @media screen and (-webkit-min-device-pixel-ratio: 2),
 (min-rezolution: 2dppx),
 (min-rezolution: 192dpi) {
-    .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/heroimg.jpg);
-    }
+.title {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/heroimg.jpg);
+}
 }
 
 @media screen and (min-width: 768px) {
